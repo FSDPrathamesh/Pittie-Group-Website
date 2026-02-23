@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pittie Group</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="design/universal.css" />
+    <link rel="stylesheet" href="design/brand.css" />
+</head>
+
+<body>
+    <!-- Skip Navigation Link (REQUIRED) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header bg-white border-bottom sticky-top" role="banner">
+        <nav class="navbar navbar-expand-lg" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/Pittie-group-Logo.webp" alt="Pittie Group Logo" />
+                </a>
+
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto justify-content-center align-items-lg-center gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <!-- Main Link -->
+                            <div class="d-flex gap-2">
+                                <a class="nav-link" href="brand.html"> Our Brand </a>
+
+                                <!-- Dropdown Toggle Arrow -->
+                                <a class="nav-link dropdown-toggle dropdown-toggle-split" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                </a>
+                            </div>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="https://pittieconsumer.com/" target="_blank">Pittie
+                                        Consumer</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://pittielogistics.com/" target="_blank">Pittie
+                                        Logistics</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="http://victoriaenterprises.co.in/"
+                                        target="_blank">Pittie Realty</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://www.epiccompany.com/" target="_blank">Pittie
+                                        Media</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-brand-gray" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-brand-gray" href="community.html">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-brand-gray" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT LANDMARK -->
+    <main id="main-content" role="main">
+
+        <!-- Hero Swiper Section -->
+        <section class="hero-section">
+            <!-- Main Slider -->
+            <div class="swiper heroMain">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(&quot;project1.jpg&quot;)">
+                        <div class="container hero-content">
+                            <span class="hero-badge">PITTIE REALTY</span>
+                            <h1>Building Business,<br />Shaping Future</h1>
+                            <p>
+                                Delivering world class spaces for residences and businesses
+                                alike.
+                            </p>
+                            <a href="#" class="btn hero-btn">View Details</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(&quot;project2.jpg&quot;)">
+                        <div class="container hero-content">
+                            <span class="hero-badge">LOGISTICS</span>
+                            <h1>Efficient<br />Supply Chain</h1>
+                            <p>Advanced warehousing and supply chain solutions.</p>
+                            <a href="#" class="btn hero-btn">Explore</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" style="background-image: url(&quot;project3.jpg&quot;)">
+                        <div class="container hero-content">
+                            <span class="hero-badge">RETAIL</span>
+                            <h1>Modern<br />Retail Spaces</h1>
+                            <p>Creating spaces designed for performance.</p>
+                            <a href="#" class="btn hero-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thumbnail Overlay Slider -->
+            <div class="swiper heroThumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="project1.jpg" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="project2.jpg" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="project3.jpg" />
+                    </div>
+                </div>
+                <div class="slider-icons">
+                    <div class="hero-prev">
+                        <!-- LEFT SVG -->
+                        <svg width="26" height="32" viewBox="0 0 26 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.9453 0.902345L0.945313 15.9023L24.9453 30.9023L24.9453 0.902345Z" fill="white"
+                                fill-opacity="0.2" />
+                            <path
+                                d="M0.945313 15.9023L24.9453 0.902345M0.945313 15.9023L24.9453 30.9023M0.945313 15.9023L20.3647 15.9023M24.9453 0.902345L24.9453 30.9023M24.9453 0.902345L20.3647 15.9023M24.9453 30.9023L20.3647 15.9023"
+                                stroke="white" />
+                        </svg>
+                    </div>
+
+                    <div class="hero-next">
+                        <!-- RIGHT SVG -->
+                        <svg width="26" height="32" viewBox="0 0 26 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 0.902345L24.5 15.9023L0.5 30.9023L0.5 0.902345Z" fill="white"
+                                fill-opacity="0.2" />
+                            <path
+                                d="M24.5 15.9023L0.5 0.902345M24.5 15.9023L0.5 30.9023M24.5 15.9023L5.08065 15.9023M0.5 0.902345L0.5 30.9023M0.5 0.902345L5.08065 15.9023M0.5 30.9023L5.08065 15.9023"
+                                stroke="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Business Section -->
+        <section class="business-section">
+            <div class="container text-center">
+                <h2 class="section-title">Check Out Our Business Areas</h2>
+
+                <ul class="nav nav-pills mb-5 justify-content-center gap-4" id="businessTabs" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#real-estate">
+                            <img src="assets/homePage/path-to-real-estate-icon.svg" alt="Real Estate" />
+                            Real estate
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#media">
+                            <img src="assets/homePage/path-to-media-icon.svg" alt="Media" />
+                            Media
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#consumer">
+                            <img src="assets/homePage/path-to-consumer-icon.svg" alt="Consumer" />
+                            Consumer
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#logistics">
+                            <img src="assets/homePage/path-to-logistics-icon.svg" alt="Logistics" />
+                            Logistics
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- Real Estate Tab -->
+                    <div class="tab-pane fade show active" id="real-estate">
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <a href="antariksh.html" target="_blank" class="business-card">
+                                    <img src="project1.jpg" alt="Antariksh" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            Antariksh <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="project2.html" target="_blank" class="business-card">
+                                    <img src="project2.jpg" alt="Project" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            View Details <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="project3.html" target="_blank" class="business-card">
+                                    <img src="project3.jpg" alt="Project" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            View Details <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="project4.html" target="_blank" class="business-card">
+                                    <img src="project4.jpg" alt="Project" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            View Details <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="project5.html" target="_blank" class="business-card">
+                                    <img src="project5.jpg" alt="Project" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            View Details <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="project6.html" target="_blank" class="business-card">
+                                    <img src="project6.jpg" alt="Project" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            View Details <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Media Tab -->
+                    <div class="tab-pane fade" id="media">
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <a href="najara.html" target="_blank" class="business-card">
+                                    <img src="assets/homePage/najara.png" alt="najara" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            Najara <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="ishara.html" target="_blank" class="business-card">
+                                    <img src="assets/homePage/ishara.png" alt="ishara" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            Ishara <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="film-mirch.html" target="_blank" class="business-card">
+                                    <img src="assets/homePage/film-mirch.png" alt="film-mirch" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            Film Mirch <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="show-box.html" target="_blank" class="business-card">
+                                    <img src="assets/homePage/show-box.png" alt="show-box" />
+                                    <div class="card-overlay">
+                                        <span>
+                                            Show Box <i class="bi bi-box-arrow-up-right"></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-4 text-center">
+                    <button class="btn btn-view-all">View all</button>
+                </div>
+        </section>
+
+    <!-- Service Section -->
+         <section class="snap-section section services-section bg-color-blue">
+            <div class="container">
+                <!-- Services Heading -->
+                <div class="row flex-column align-items-center text-center">
+                    <span class="badge mb-3">Our Services</span>
+                    <h2>Power Logistics Across Business</h2>
+                </div>
+
+                <!-- Services Types -->
+                <div class="row services-Types flex-wrap pt-5">
+                    <!-- Service 1 -->
+                    <div class="Services-box mb-4">
+                        <div class="Services-box-item col-5">
+                            <img src="pittie-home-assests/image1.jpg" alt="Freight Forwarding" />
+                            <div class="services-content">
+                                <span class="sub-heading">Realty</span>
+                                <h3>Carry &amp; Forward (C&amp;F) Partners</h3>
+                                <p>
+                                    Pittie Logistics operates as a reliable Carry &amp; Forward
+                                    partner, managing inventory, warehousing, dispatch, and
+                                    secondary distribution with accuracy and efficiency.
+                                </p>
+                            </div>
+                            <div class="Services-box-right-arrow">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                        <div class="Services-box-item col-7 ms-4">
+                            <img src="pittie-home-assests/image2.jpg" alt="Customs Clearance" />
+                            <div class="services-content">
+                                <span class="sub-heading">Consumer</span>
+                                <h3>Carry &amp; Forward (C&amp;F) Partners</h3>
+                                <p>
+                                    Pittie Logistics operates as a reliable Carry &amp; Forward
+                                    partner, managing inventory, warehousing, dispatch, and
+                                    secondary distribution with accuracy and efficiency.
+                                </p>
+                            </div>
+                            <div class="Services-box-right-arrow">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="Services-box">
+                        <div class="Services-box-item col-7 me-4">
+                            <img src="pittie-home-assests/image3.jpg" alt="Freight Forwarding" />
+                            <div class="services-content">
+                                <span class="sub-heading">In 10 Media</span>
+                                <h3>Super Stockist Services</h3>
+                                <p>
+                                    Pittie Logistics offers reliable Super Stockist solutions
+                                    that ensure efficient bulk storage, inventory control, and
+                                    timely distribution across territories.
+                                </p>
+                            </div>
+                            <div class="Services-box-right-arrow">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                        <div class="Services-box-item col-5">
+                            <img src="pittie-home-assests/image4.jpg" alt="Customs Clearance" />
+                            <div class="services-content">
+                                <span class="sub-heading">Logistics</span>
+                                <h3>Super Stockist Services</h3>
+                                <p>
+                                    Pittie Logistics offers reliable Super Stockist solutions
+                                    that ensure efficient bulk storage, inventory control, and
+                                    timely distribution across territories.
+                                </p>
+                            </div>
+                            <div class="Services-box-right-arrow">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-col footer-brand">
+                    <img src="Assests/home/PittieLogistics.png" alt="Pittie Group Logo" class="footer-logo" />
+                    <p class="footer-tagline">
+                        Enhancing logistics with innovative solutions.
+                    </p>
+                </div>
+
+                <!-- Mobile Get In Touch (ONLY for mobile) -->
+                <div class="mobile-get-in-touch">
+                    <h3>Get in touch</h3>
+
+                    <div class="icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M21 10.9112C21 17.9112 12 22.9112 12 22.9112C12 22.9112 3 17.9112 3 10.9112C3 6.4939 6.58172 2.91113 12 2.91113C17.4183 2.91113 21 6.4939 21 10.9112Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12 13.9111C13.6569 13.9111 15 12.568 15 10.9111C15 9.25427 13.6569 7.91113 12 7.91113C10.3431 7.91113 9 9.25427 9 10.9111C9 12.568 10.3431 13.9111 12 13.9111Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <p class="address First">
+                        Vaibhav Chambers, Bandra Kurla Complex, Bandra - East, Mumbai -
+                        400051.
+                    </p>
+
+                    <span class="divider"></span>
+
+                    <p class="address">
+                        Raheja District I, B3 & B4, RICC, Plot Gen-2/1/B, D Block, T.T.C.
+                        Industrial Area, Juinagar, Navi Mumbai - 400705.
+                    </p>
+
+                    <div class="contact-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M4 4.91113H20C21.1 4.91113 22 5.81113 22 6.91113V18.9111C22 20.0111 21.1 20.9111 20 20.9111H4C2.9 20.9111 2 20.0111 2 18.9111V6.91113C2 5.81113 2.9 4.91113 4 4.91113Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M22 6.91113L12 13.9111L2 6.91113" stroke="black" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <!-- <a href="mailto:contact@pittiegroup.com"
+                >contact@pittiegroup.com</a
+              > -->
+                        <a href="https://mail.google.com/mail/u/0/?view=cm&amp;fs=1&amp;to=contact@pittiegroup.com">contact@pittiegroup.com
+                        </a>
+                    </div>
+
+                    <div class="contact-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M21.9994 17.8312V20.8312C22.0006 21.1097 21.9435 21.3854 21.832 21.6406C21.7204 21.8958 21.5567 22.1248 21.3515 22.3131C21.1463 22.5014 20.904 22.6447 20.6402 22.7339C20.3764 22.8232 20.0968 22.8563 19.8194 22.8312C16.7423 22.4969 13.7864 21.4454 11.1894 19.7612C8.77327 18.2259 6.72478 16.1774 5.18945 13.7612C3.49942 11.1524 2.44769 8.18222 2.11944 5.09123C2.09446 4.8147 2.12732 4.53599 2.21595 4.27285C2.30457 4.00972 2.44702 3.76792 2.63421 3.56285C2.82141 3.35778 3.04925 3.19394 3.30324 3.08175C3.55722 2.96956 3.83179 2.91149 4.10945 2.91123H7.10945C7.59475 2.90645 8.06524 3.07831 8.43321 3.39476C8.80118 3.71122 9.04152 4.15068 9.10944 4.63123C9.23607 5.5913 9.47089 6.53396 9.80945 7.44123C9.94399 7.79915 9.97311 8.18814 9.89335 8.56211C9.8136 8.93608 9.62831 9.27934 9.35944 9.55123L8.08945 10.8212C9.513 13.3248 11.5859 15.3977 14.0894 16.8212L15.3594 15.5512C15.6313 15.2824 15.9746 15.0971 16.3486 15.0173C16.7225 14.9376 17.1115 14.9667 17.4694 15.1012C18.3767 15.4398 19.3194 15.6746 20.2794 15.8012C20.7652 15.8698 21.2088 16.1144 21.526 16.4887C21.8431 16.863 22.0116 17.3408 21.9994 17.8312Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <a href="tel:+912242604260">+91 22 4260 4260</a>
+                    </div>
+                </div>
+                <div class="consumer-rights">
+                    <p class="logistics-policy">
+                        © 2025 Pittie Logistics. All Rights Reserved.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col footer-col-quicks">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About-Us.html">About Us</a></li>
+                        <li><a href="Capabilities.html">News</a></li>
+                        <li><a href="Partners.html">Community</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col footer-col-services">
+                    <h3 class="footer-title">Our Businesses</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="http://victoriaenterprises.co.in/">Pittie Realty</a>
+                        </li>
+                        <li>
+                            <a href="https://pittieconsumer.com/">Pittie Consumer</a>
+                        </li>
+                        <li>
+                            <a href="https://www.epiccompany.com/">IN10 Media</a>
+                        </li>
+                        <li>
+                            <a href="http://pittielogistics.com/">Pittie Logistics</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M4 4.91113H20C21.1 4.91113 22 5.81113 22 6.91113V18.9111C22 20.0111 21.1 20.9111 20 20.9111H4C2.9 20.9111 2 20.0111 2 18.9111V6.91113C2 5.81113 2.9 4.91113 4 4.91113Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M22 6.91113L12 13.9111L2 6.91113" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <a href="mailto:contact@pittiegroup.com">contact@pittiegroup.com</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 25"
+                                fill="none">
+                                <path
+                                    d="M21.9994 17.8312V20.8312C22.0006 21.1097 21.9435 21.3854 21.832 21.6406C21.7204 21.8958 21.5567 22.1248 21.3515 22.3131C21.1463 22.5014 20.904 22.6447 20.6402 22.7339C20.3764 22.8232 20.0968 22.8563 19.8194 22.8312C16.7423 22.4969 13.7864 21.4454 11.1894 19.7612C8.77327 18.2259 6.72478 16.1774 5.18945 13.7612C3.49942 11.1524 2.44769 8.18222 2.11944 5.09123C2.09446 4.8147 2.12732 4.53599 2.21595 4.27285C2.30457 4.00972 2.44702 3.76792 2.63421 3.56285C2.82141 3.35778 3.04925 3.19394 3.30324 3.08175C3.55722 2.96956 3.83179 2.91149 4.10945 2.91123H7.10945C7.59475 2.90645 8.06524 3.07831 8.43321 3.39476C8.80118 3.71122 9.04152 4.15068 9.10944 4.63123C9.23607 5.5913 9.47089 6.53396 9.80945 7.44123C9.94399 7.79915 9.97311 8.18814 9.89335 8.56211C9.8136 8.93608 9.62831 9.27934 9.35944 9.55123L8.08945 10.8212C9.513 13.3248 11.5859 15.3977 14.0894 16.8212L15.3594 15.5512C15.6313 15.2824 15.9746 15.0971 16.3486 15.0173C16.7225 14.9376 17.1115 14.9667 17.4694 15.1012C18.3767 15.4398 19.3194 15.6746 20.2794 15.8012C20.7652 15.8698 21.2088 16.1144 21.526 16.4887C21.8431 16.863 22.0116 17.3408 21.9994 17.8312Z"
+                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <a href="tel:+912242604260">+91 22 4260 4260</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= Scripts ================= -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="logic/universal.js"></script>
+    <script src="logic/brand.js"></script>
+</body>
+
+</html>
