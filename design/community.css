@@ -257,7 +257,7 @@
 ========================= */
 
 .life-section {
-    background: var(--bg-sections);
+    /* background: var(--bg-sections); */
     padding: 80px 0;
 }
 
