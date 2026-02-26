@@ -30,6 +30,7 @@
     --radius12: 12px;
     --radius16: 16px;
     --radius24: 24px;
+    --radius50: 50px;
     --radius999: 999px;
 
     /* Spacing */
@@ -96,7 +97,8 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(1.25rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+    line-height: 1.3;
     font-weight: 600;
 }
 
@@ -109,7 +111,6 @@ h6 {
 
 /* ===================== Text ===================== */
 p,
-li,
 span {
     font-size: clamp(18px, 1vw, 1.05rem);
     line-height: 1.8;
@@ -137,6 +138,7 @@ button:hover {
 img {
     max-width: 100%;
     width: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -247,15 +249,12 @@ button.btn-primary:hover svg {
 
 /* sub heading */
 
-.sub-heading {
-    border: 1px solid var(--bg-danger);
-    color: var(--bg-danger);
-    padding: 6px 16px;
-    border-radius: var(--radius999);
-    font-weight: 500;
+.section-label {
+    color: var(--button-color);
+    letter-spacing: 2px;
+    font-weight: 600;
     font-size: clamp(14px, 1.2vw, 18px);
-    font-family: var(--font-primary);
-    width: fit-content;
+    text-transform: uppercase;
 }
 
 .sub-heading-outline {
@@ -264,7 +263,6 @@ button.btn-primary:hover svg {
     padding: 6px 16px;
     border-radius: var(--radius999);
     font-weight: 500;
-    font-size: clamp(14px, 1.2vw, 18px);
     margin-bottom: var(--pm16);
     color: var(--bg-primary);
     width: fit-content;
@@ -326,6 +324,9 @@ button.btn-primary:hover svg {
 /* ==============================
    Header Styles
    ============================== */
+.header {
+    z-index: 1111111;
+}
 
 .navbar-nav .nav-link {
     position: relative;
@@ -336,6 +337,10 @@ button.btn-primary:hover svg {
     margin-right: 0;
 }
 
+.navbar-toggler-icon {
+    margin-bottom: 0;
+}
+
 .nav-item {
     margin-bottom: 0;
 }
@@ -343,6 +348,7 @@ button.btn-primary:hover svg {
 .navbar-nav .nav-link.active {
     color: var(--bg-dark);
     font-weight: 600;
+    border-bottom: 2px solid var(--button-color);
 }
 
 .navbar-nav a {
@@ -353,6 +359,10 @@ button.btn-primary:hover svg {
 .navbar-nav a:hover {
     color: var(--bg1-color);
     transition: 0.5s ease;
+}
+
+.navbar-toggler:hover {
+    background: transparent;
 }
 
 
@@ -381,6 +391,7 @@ button.btn-primary:hover svg {
 .footer-logo {
     /* max-width: 160px; */
     max-width: 102px;
+    /* margin: auto; */
     margin-bottom: 12px;
 }
 
@@ -469,6 +480,18 @@ button.btn-primary:hover svg {
         gap: 30px;
     }
 
+    .navbar-collapse {
+        margin-block: 20px;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .dropdown-menu {
+        transition: all 0.3s ease;
+        margin-top: 10px;
+    }
 
 }
 
@@ -490,6 +513,8 @@ button.btn-primary:hover svg {
     .footer-brand,
     .footer-col {
         align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
     .footer-contact li {

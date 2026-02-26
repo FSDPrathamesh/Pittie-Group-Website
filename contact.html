@@ -38,7 +38,7 @@
     <!-- Skip Navigation Link (REQUIRED) -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="header bg-white border-bottom sticky-top" role="banner">
+    <header class="header bg-white sticky-top" role="banner">
       <nav class="navbar navbar-expand-lg" role="navigation">
         <div class="container">
           <a class="navbar-brand" href="index.html">
@@ -59,10 +59,10 @@
 
           <div class="collapse navbar-collapse" id="mainNavbar">
             <ul
-              class="navbar-nav ms-auto justify-content-center align-items-lg-center gap-lg-4"
+              class="navbar-nav gap-3 ms-auto justify-content-center align-items-lg-center gap-lg-4"
             >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
@@ -118,15 +118,16 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-brand-gray" href="news.html">News</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link text-brand-gray" href="community.html"
                   >Community</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-brand-gray" href="contact.html"
+                <a class="nav-link text-brand-gray" href="news.html">News</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-brand-gray active" href="contact.html"
                   >Contact Us</a
                 >
               </li>
@@ -139,12 +140,12 @@
     <!-- MAIN CONTENT LANDMARK -->
     <main id="main-content" role="main">
       <!-- Hero Section -->
-      <section class="community-section py-5">
+      <section class="community-section pb-5">
         <div class="container">
           <div class="community-wrapper position-relative overflow-hidden">
             <!-- Background Image -->
             <img
-              src="images/community.jpg"
+              src="assets/contactPage/contact-heroSection.png"
               class="community-bg img-fluid w-100"
               alt="Community"
             />
@@ -156,16 +157,14 @@
               <div class="row w-100 px-5">
                 <!-- Left Side -->
                 <div class="col-lg-6">
-                  <h2 class="community-title">Community</h2>
+                  <h1 class="community-title">Contact Us</h1>
                 </div>
 
                 <!-- Right Side -->
                 <div class="col-lg-6">
-                  <h4 class="community-heading">PEOPLE, PASSION, PRIDE</h4>
                   <p class="community-text">
-                    At Pittie we strive to create a culture of collaboration
-                    within and between teams to create an environment of
-                    cross-functional learning and growth.
+                    Want to get in touch? We'd love to hear from you. Here's how
+                    you can reach us...
                   </p>
                 </div>
               </div>
@@ -183,7 +182,26 @@
               <div class="contact-header mb-4">
                 <h2 class="contact-title">
                   REACH OUT TO US
-                  <span class="title-arrow">▶</span>
+                  <span class="title-arrow"
+                    ><svg
+                      viewBox="0 0 33 41"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.90232 20.3828L32.3879 20.3828L0.0300026 40.7369L8.90232 20.3828Z"
+                        fill="#930D1B"
+                      />
+                      <path
+                        d="M0.0289841 0L32.3879 20.3541L8.9013 20.3541L0.0289841 0Z"
+                        fill="#E9292F"
+                      />
+                      <path
+                        d="M8.87223 20.3893L-8.62786e-05 0.0351563L-8.62786e-05 40.7434L8.87223 20.3893Z"
+                        fill="#D9D9D8"
+                      />
+                    </svg>
+                  </span>
                 </h2>
                 <p class="contact-subtitle">
                   You are just a few steps away from us
@@ -194,22 +212,38 @@
                 <div class="row g-4">
                   <div class="col-md-6">
                     <label>First Name</label>
-                    <input type="text" class="form-control contact-input" />
+                    <input
+                      type="text"
+                      class="form-control contact-input"
+                      placeholder="Enter your first name"
+                    />
                   </div>
 
                   <div class="col-md-6">
                     <label>Last Name</label>
-                    <input type="text" class="form-control contact-input" />
+                    <input
+                      type="text"
+                      class="form-control contact-input"
+                      placeholder="Enter your last name"
+                    />
                   </div>
 
                   <div class="col-md-6">
                     <label>Email</label>
-                    <input type="email" class="form-control contact-input" />
+                    <input
+                      type="email"
+                      class="form-control contact-input"
+                      placeholder="Enter your email address"
+                    />
                   </div>
 
                   <div class="col-md-6">
                     <label>Phone Number</label>
-                    <input type="text" class="form-control contact-input" />
+                    <input
+                      type="text"
+                      class="form-control contact-input"
+                      placeholder="Enter your phone number"
+                    />
                   </div>
 
                   <div class="col-12">
@@ -222,14 +256,40 @@
                   </div>
                 </div>
 
-                <button type="submit" class="contact-btn mt-4">Submit →</button>
+                <button class="btn btn-primary contact-btn mt-4">
+                  <a href="#">
+                    Submit
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.92757 16.8242L16.8242 6.92757M16.8242 6.92757H6.92757M16.8242 6.92757V16.8242"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </a>
+                </button>
               </form>
             </div>
 
             <!-- RIGHT SIDE MAP -->
             <div class="col-lg-6 text-center mt-5 mt-lg-0">
               <div class="map-box">
-                <img src="images/map.jpg" alt="Map" class="img-fluid" />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2490715312956!2d73.02454767418358!3d19.052783652702995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3224c69f42b%3A0xa35cbeb05c435333!2sPittie%20Group!5e0!3m2!1sen!2sin!4v1750157827451!5m2!1sen!2sin"
+                  width="100%"
+                  height="450"
+                  style="border: 0; object-fit: cover"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -316,163 +376,150 @@
             </div>
           </div>
         </div>
+
+        <div class="address-section-icon d-flex justify-content-between">
+          <div class="address-section-icon-image">
+            <img src="assets/contactPage/Vector 18.png" alt="" />
+          </div>
+          <div class="address-section-icon-image address-section-icon-image2">
+            <img src="assets/contactPage/Vector 18.png" alt="" />
+          </div>
+        </div>
       </section>
 
-      <!-- Career Section -->
-      <section class="career-section py-5">
+      <!-- Career Testimonial Section -->
+      <section class="career-testimonial-section py-5">
         <div class="container">
           <h2 class="section-title text-center mb-5">
-            Careers At Pittie Group
+            Experiences Shared By Our Employees
           </h2>
 
-          <div class="swiper careerSwiper">
-            <div class="swiper-wrapper">
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div class="career-layout">
-                  <!-- LEFT IMAGE -->
-                  <div class="career-image">
-                    <img src="images/career1.jpg" alt="" />
-                  </div>
-
-                  <!-- RIGHT FLOATING CARD -->
-                  <div class="career-card">
-                    <div class="career-icon">★</div>
-
-                    <p class="career-text">
-                      We empower our teams with opportunities to innovate,
-                      collaborate and lead impactful projects across industries.
-                    </p>
-
-                    <div class="career-profile">
-                      <img src="images/profile1.jpg" alt="" />
-                      <div>
-                        <h6>Software Engineer</h6>
-                        <span>Technology Division</span>
-                      </div>
+          <div class="career-testimonial-row">
+            <!-- LEFT IMAGE SWIPER -->
+            <div class="swiper careerImageSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="career-testimonial-layout">
+                    <div class="career-testimonial-image">
+                      <img
+                        src="assets/commitmentPage/community-testimonials1.png"
+                        alt="Employee"
+                      />
                     </div>
+                  </div>
+                </div>
 
-                    <div class="career-footer">
-                      <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
+                  <div class="career-testimonial-layout">
+                    <div class="career-testimonial-image">
+                      <img
+                        src="assets/commitmentPage/community-testimonials1.png"
+                        alt="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
 
-                      <div class="nav-buttons">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      </div>
+                <div class="swiper-slide">
+                  <div class="career-testimonial-layout">
+                    <div class="career-testimonial-image">
+                      <img
+                        src="assets/commitmentPage/community-testimonials1.png"
+                        alt="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="career-testimonial-layout">
+                    <div class="career-testimonial-image">
+                      <img
+                        src="assets/commitmentPage/community-testimonials1.png"
+                        alt="Employee"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div class="career-layout">
-                  <!-- LEFT IMAGE -->
-                  <div class="career-image">
-                    <img src="images/career1.jpg" alt="" />
+            <!-- RIGHT CONTENT SWIPER -->
+            <div class="swiper careerContentSwiper career-testimonial-card">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="quote-icon">
+                    <!-- SVG remains same -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <path
+                        d="M0 24.0002V44.5716H20.5715V24.0002H6.85719C6.85719 16.4383 13.0096 10.2859 20.5715 10.2859V3.42871C9.22767 3.42871 0 12.6564 0 24.0002Z"
+                        fill="#1A4174"
+                      />
+                      <path
+                        d="M47.9992 10.2859V3.42871C36.6554 3.42871 27.4277 12.6564 27.4277 24.0002V44.5716H47.9992V24.0002H34.2849C34.2849 16.4383 40.4373 10.2859 47.9992 10.2859Z"
+                        fill="#1A4174"
+                      />
+                    </svg>
                   </div>
 
-                  <!-- RIGHT FLOATING CARD -->
-                  <div class="career-card">
-                    <div class="career-icon">★</div>
+                  <p class="career-testimonial-text">
+                    Working at Pittie has given me opportunities to grow
+                    professionally while contributing meaningfully to impactful
+                    logistics solutions.
+                  </p>
 
-                    <p class="career-text">
-                      We empower our teams with opportunities to innovate,
-                      collaborate and lead impactful projects across industries.
-                    </p>
-
-                    <div class="career-profile">
-                      <img src="images/profile1.jpg" alt="" />
-                      <div>
-                        <h6>Software Engineer</h6>
-                        <span>Technology Division</span>
-                      </div>
+                  <div class="career-testimonial-profile">
+                    <img src="images/profile1.jpg" alt="Employee Profile" />
+                    <div>
+                      <h6>Artemisia Udinese</h6>
+                      <span>Marketing Specialist</span>
                     </div>
+                  </div>
+                </div>
 
-                    <div class="career-footer">
-                      <div class="swiper-pagination"></div>
+                <!-- Duplicate slides as needed -->
+                <div class="swiper-slide">
+                  <div class="quote-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                      <path
+                        d="M0 24.0002V44.5716H20.5715V24.0002H6.85719C6.85719 16.4383 13.0096 10.2859 20.5715 10.2859V3.42871C9.22767 3.42871 0 12.6564 0 24.0002Z"
+                        fill="#1A4174"
+                      />
+                      <path
+                        d="M47.9992 10.2859V3.42871C36.6554 3.42871 27.4277 12.6564 27.4277 24.0002V44.5716H47.9992V24.0002H34.2849C34.2849 16.4383 40.4373 10.2859 47.9992 10.2859Z"
+                        fill="#1A4174"
+                      />
+                    </svg>
+                  </div>
 
-                      <div class="nav-buttons">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      </div>
+                  <p class="career-testimonial-text">
+                    The collaborative environment and leadership support here
+                    truly empower employees to innovate and excel.
+                  </p>
+
+                  <div class="career-testimonial-profile">
+                    <img src="images/profile1.jpg" alt="Employee Profile" />
+                    <div>
+                      <h6>Artemisia Udinese</h6>
+                      <span>Marketing Specialist</span>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div class="career-layout">
-                  <!-- LEFT IMAGE -->
-                  <div class="career-image">
-                    <img src="images/career1.jpg" alt="" />
-                  </div>
-
-                  <!-- RIGHT FLOATING CARD -->
-                  <div class="career-card">
-                    <div class="career-icon">★</div>
-
-                    <p class="career-text">
-                      We empower our teams with opportunities to innovate,
-                      collaborate and lead impactful projects across industries.
-                    </p>
-
-                    <div class="career-profile">
-                      <img src="images/profile1.jpg" alt="" />
-                      <div>
-                        <h6>Software Engineer</h6>
-                        <span>Technology Division</span>
-                      </div>
-                    </div>
-
-                    <div class="career-footer">
-                      <div class="swiper-pagination"></div>
-
-                      <div class="nav-buttons">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <!-- Pagination + Navigation -->
+            <div class="career-pagination-wrapper d-flex">
+              <div class="career-pagination">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
 
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div class="career-layout">
-                  <!-- LEFT IMAGE -->
-                  <div class="career-image">
-                    <img src="images/career1.jpg" alt="" />
-                  </div>
-
-                  <!-- RIGHT FLOATING CARD -->
-                  <div class="career-card">
-                    <div class="career-icon">★</div>
-
-                    <p class="career-text">
-                      We empower our teams with opportunities to innovate,
-                      collaborate and lead impactful projects across industries.
-                    </p>
-
-                    <div class="career-profile">
-                      <img src="images/profile1.jpg" alt="" />
-                      <div>
-                        <h6>Software Engineer</h6>
-                        <span>Technology Division</span>
-                      </div>
-                    </div>
-
-                    <div class="career-footer">
-                      <div class="swiper-pagination"></div>
-
-                      <div class="nav-buttons">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="career-nav-buttons">
+                <div class="swiper-button-icon swiper-button-prev"></div>
+                <div class="swiper-button-icon swiper-button-next"></div>
               </div>
             </div>
           </div>
@@ -492,7 +539,11 @@
             <!-- LEFT IMAGE -->
             <div class="col-lg-5 mb-4 mb-lg-0">
               <div class="faq-image">
-                <img src="images/faq.jpg" class="img-fluid" alt="" />
+                <img
+                  src="assets/contactPage/contact-faq.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
             </div>
 
@@ -508,7 +559,8 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#faq1"
                     >
-                      How can I become a distributor?
+                      How can I become a distributor for Pittie Consumer
+                      products?
                     </button>
                   </h2>
                   <div
@@ -531,7 +583,7 @@
                       data-bs-toggle="collapse"
                       data-bs-target="#faq2"
                     >
-                      Where can I purchase our products?
+                      Where can I purchase Pittie Consumer products?
                     </button>
                   </h2>
                   <div
@@ -540,8 +592,11 @@
                     data-bs-parent="#faqAccordion"
                   >
                     <div class="accordion-body">
-                      Our products are available through retail stores,
-                      e-commerce platforms and our official website.
+                      Our products are available across India through various
+                      channels including modern retail stores, traditional
+                      kirana shops, e-commerce platforms like Amazon and
+                      Flipkart, and our own website. Use our store locator to
+                      find the nearest retailer carrying our products.
                     </div>
                   </div>
                 </div>
@@ -569,7 +624,51 @@
                   </div>
                 </div>
 
-                <!-- Add more items same structure -->
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq4"
+                    >
+                      Do you offer bulk discounts for large orders?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Returns are accepted within 7 days of purchase.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq5"
+                    >
+                      How can I track my order?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Returns are accepted within 7 days of purchase.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -584,12 +683,13 @@
           <!-- Company Info -->
           <div class="footer-col footer-brand">
             <img
-              src="Assests/home/PittieLogistics.png"
-              alt="Pittie Logistics Logo"
+              src="assets/Pittie-group-Logo.webp"
+              alt="Pittie Group Logo"
               class="footer-logo"
             />
             <p class="footer-tagline">
-              Enhancing logistics with innovative solutions.
+              We aim to enrich lives, transform industries through our diverse
+              verticals : Realty, Logistics, Consumer & Media.
             </p>
           </div>
 
@@ -786,6 +886,6 @@
 
     <!-- Main JS -->
     <script src="logic/universal.js"></script>
-    <script src="logic/script.js"></script>
+    <script src="logic/contact.js"></script>
   </body>
 </html>
